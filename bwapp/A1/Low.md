@@ -38,4 +38,17 @@
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming from URL.
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/HTML-injection-reflected(url)-reason.png?raw=true)
 
+<br><br>
+
+<b>Vulnerability:</b> HTML Injection - Stored(Blog) 
+
+<b>Payload:</b> ```<h1><b>injection</b></h1>```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/HTML%20injection-stored(blog).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, input validation is only for SQLInjection. There is no input validation for HTML tag escaping etc.
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/HTML%20injection-stored(blog)-reason.png?raw=true)
 
