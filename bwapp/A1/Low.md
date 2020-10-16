@@ -52,3 +52,16 @@
 <b>Reason:</b> As you can see in the screenshot above, input validation is only for SQLInjection. There is no input validation for HTML tag escaping etc.
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/HTML%20injection-stored(blog)-reason.png?raw=true)
 
+<br><br>
+
+<b>Vulnerability:</b> IFrame Injection 
+
+<b>Payload:</b> https://google.com
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/iframeinjection.png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming from URL. We can not see the page for google because of Google's policy. However, we can understand that we can inject malicious site into the iframe.
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/iframeinjection-reason.png?raw=true)
