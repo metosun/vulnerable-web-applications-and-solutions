@@ -126,3 +126,19 @@
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation.<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/html-injection-reflected(get)-reason.png?raw=true)
+
+
+
+<br><br>
+
+<b>Vulnerability:</b> Server Side Includes(SSI) Injection
+
+<b>Payload:</b> ```<!--#exec cmd="id"-->```<br>```<!--#exec cmd="whoami"-->```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(get-search).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(get-search)reason.png?raw=true)
