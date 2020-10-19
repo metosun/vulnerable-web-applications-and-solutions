@@ -273,3 +273,67 @@
 <b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-sqlite)-reason.png?raw=true)
 
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Stored(User-Agent)
+
+<b>Payload:</b> ```',(select @@version))-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-user-agent)1.png?raw=true)
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-user-agent)2.png?raw=true)
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by HTTP request package's User Agent field used in the sql query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-user-agent)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Stored(XML)
+
+<b>Payload:</b> ```bee' (select 0 from test) '```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-xml).png?raw=true)
+
+<b>Reason:</b> The input provided by user, sent inside xml query. When we manipulate the query, we can see that there is Error based SQL Injection. We can go further from there.<br>
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Blind - Boolean Based
+
+<b>Payload:</b> ```' or 1=1-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-booleanbased.png?raw=true)
+
+<b>Reason:</b> There is boolean based sql injection. It does not give us any data. However, we can make inferences from application's behaviors. When we give true statement it prints something, when it is false statement the printing changes. So, we can go further from this point.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-booleanbased)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Blind - Time Based
+
+<b>Payload:</b> ```' and (select sleep(10) from users)-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased.png?raw=true)
+
+<b>Reason:</b> There is time based sql injection. It does not give us any data. However, we can make inferences from application's behaviors. When we give sleep command to the database, it sleeps. So, we can go further from that point.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> XML/XPath Injection (Login Form)
+
+<b>Payload:</b> ```' and (select sleep(10) from users)-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased.png?raw=true)
+
+<b>Reason:</b> There is time based sql injection. It does not give us any data. However, we can make inferences from application's behaviors. When we give sleep command to the database, it sleeps. So, we can go further from that point.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased)-reason.png?raw=true)
