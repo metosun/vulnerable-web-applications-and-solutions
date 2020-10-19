@@ -314,7 +314,7 @@
 
 <br><br>
 
-<b>Vulnerability:</b> SQL Injection - Blind - Time Based
+<b>Vulnerability:</b> SQL Injection - Blind - (Web Services/SOAP)
 
 <b>Payload:</b> ```' and (select sleep(10) from users)-- -```
 
@@ -327,13 +327,44 @@
 
 <br><br>
 
-<b>Vulnerability:</b> XML/XPath Injection (Login Form)
+<b>Vulnerability:</b> SQL Injection - Blind - Time Based
 
-<b>Payload:</b> ```' and (select sleep(10) from users)-- -```
+<b>Payload:</b> ```' and 1=1-- -```
 
 <b>Screenshot:</b>
 
-![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased.png?raw=true)
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-ws-soap)1.png?raw=true)
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-ws-soap)2.png?raw=true)
 
-<b>Reason:</b> There is time based sql injection. It does not give us any data. However, we can make inferences from application's behaviors. When we give sleep command to the database, it sleeps. So, we can go further from that point.<br>
-![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-timebased)-reason.png?raw=true)
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(blind-ws-soap)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> XML/XPath Injection (Login Form)
+
+<b>Payload:</b> ```superhero' or 1=1 or 'a'='a```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/xml-xpathinjection(loginform).png?raw=true)
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the xpath query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/xml-xpathinjection(loginform)-reason.png?raw=true)
+
+
+<br><br>
+
+<b>Vulnerability:</b> XML/XPath Injection (Search)
+
+<b>Payload:</b> ```action')]/password|a[contains(a,'```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/xml-xpathinjection(search).png?raw=true)
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the xpath query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/xml-xpathinjection(search)-reason.png?raw=true)
+
+
+
