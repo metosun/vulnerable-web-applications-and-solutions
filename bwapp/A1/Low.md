@@ -244,3 +244,32 @@
 <b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(sqlite)-reason.png?raw=true)
 
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Stored(Blog)
+
+<b>Payload:</b> ```',(select @@version))-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-blog).png?raw=true)
+
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-blog)-reason.png?raw=true)
+
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection - Stored(SQLite)
+
+<b>Payload:</b> ```',(select sqlite_version()))-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-sqlite)1.png?raw=true)
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-sqlite)2.png?raw=true)
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(stored-sqlite)-reason.png?raw=true)
+
