@@ -1,4 +1,4 @@
-There will be solutions for publicly known vulnerable web applications.
+There are solutions for publicly known vulnerable web applications.
 
 | Application  | Source | Solutions | State |
 | ------------- | ------------- | ------------- | ------------- |
