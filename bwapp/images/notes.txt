@@ -1,18 +1,11 @@
+captcha bypassing 	burada burp ile araya girip captcha_box sayfasinin yuklenmesi engellenir ve session icerisinde captcha variable set edilmesi engellenir. giris yaparken captcha_user kismini silip gondermek gerekiyor
+forgotten function	simdilik gectim bunu sonra belki tekrar bakarim
+insecure login forms	screenshotta da goruldugu gibi html icine background ile ayni renkle gomulmus sifre ve kullanici adi
+Logout management	farkli bir sekmede kullaniciyi actiktan sonra logout yaptigin zaman logout yapmadigin sekmeden devam edebiliyosun 	reason olarak bi ss aldim hic bisey yapmiyo sessionid destroying yok
+password attacks	bir engelleme olmadigi icin sinirsiz sekilde kullanici adi sifre denemesi yapilabilmekte
 
-os-command-injection   www.nsa.gov; whoami; id
-blind			goruntuden bak
-php injection		phpinfo()
-ssi injection		goruntude var 		burda da no_check kullaniliyo
-sql injection		goruntuden al		no_check var ve ss aldim
-
-sql injection post search   'and 1=0 union select ...       no check
-sql injection ajax json jquery		'and 1=0 union select 1,@@version,3,4,5,6,7-- - 
-
-sql injection login user da 9 column oldugunu bulduk devami sqlmap ile ugrasabiliriz
-
-sqlite olanda   'and 1=0 union select 1,sqlite_version(),3,4,5,6-- -
-
-
-sqlinjectionstoredxml    error based injection oldugu icin ileri goturmedim	ayni zamanda reason olarak gorunen bi kodu yok server tarafinda yaziyla aciklicam
-
-
+administrative portal	burda da sadece bir get parametresi var onunla belirliyo admin olup olmadigini
+cookies(httponly)	http only olarak set edilmedigi icin javascript araciligiyla erisilebiliyor
+cookies(secure)		When a cookie has the Secure attribute, the user agent will include the cookie in an HTTP request only if the request is transmitted over a secure channel (typically HTTPS).
+session id in url	session id url uzerinde tasinmasi guvenli olarak kabul edilmemektedir
+strong sessions kismini da biraktim belki sonra bakarim
