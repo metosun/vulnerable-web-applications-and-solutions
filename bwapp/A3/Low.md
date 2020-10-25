@@ -7,6 +7,7 @@
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(get).png?raw=true)
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming via get request.
+<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(get)-reason.png?raw=true)
 
 <br><br>
@@ -20,6 +21,7 @@
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(post).png?raw=true)
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming via post request.
+<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(post)-reason.png?raw=true)
 
 <br><br>
@@ -33,6 +35,7 @@
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(json).png?raw=true)
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming via json request. So, application directly injects the json value into script.
+<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(json)-reason.png?raw=true)
 
 <br><br>
@@ -46,6 +49,7 @@
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(ajax-json).png?raw=true)
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming via ajax request. So, application directly injects the json value into html.
+<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(ajax-json)-reason.png?raw=true)
 
 <br><br>
@@ -59,6 +63,7 @@
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(ajax-xml).png?raw=true)
 
 <b>Reason:</b> As you can see in the screenshot above, there is no input validation for data coming via ajax request. So, application directly injects the xml data into html.
+<br>
 ![Alt text](https://github.com/metosun/vulnerable-web-applications-and-solutions/blob/main/bwapp/images/xss-reflected(ajax-xml)-reason.png?raw=true)
 
 <br><br>
